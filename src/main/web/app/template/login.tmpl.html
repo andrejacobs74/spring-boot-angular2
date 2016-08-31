@@ -1,0 +1,23 @@
+<div class="login">
+    <form role="form" (ngSubmit)="onSubmit()">
+        <div class="modal-body">
+            <div *ngIf="loginError">
+                <strong><span style="color:red;">Bad Credentials</span></strong>
+            </div>
+            <div *ngIf="notValid">
+                <strong><span style="color:red;">Fill username or password</span></strong>
+            </div>
+            <div class="form-group">
+                <label for="user" class="label">User</label>
+                <input id="user" type='text' class="form-control" placeholder="User" [(ngModel)]="user.username" name="username">
+            </div>
+            <div class="form-group">
+                <label for="password" class="label">Password</label>
+                <input id="password" type='password' class="form-control" placeholder="Password" [(ngModel)]="user.password" name="password">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <input type="submit" class="btn btn-primary form-control" name="submit" value="Login">
+        </div>
+    </form>
+</div>
