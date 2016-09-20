@@ -10,8 +10,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-var router_2 = require('@angular/router');
-var forms_1 = require('@angular/forms');
 var token_srv_1 = require('../service/token.srv');
 var communication_srv_1 = require('../service/communication.srv');
 var event_srv_1 = require('../service/event.srv');
@@ -55,10 +53,9 @@ var Application = (function () {
     Application = __decorate([
         core_1.Component({
             selector: 'application',
-            directives: [router_1.ROUTER_DIRECTIVES, forms_1.FORM_DIRECTIVES],
             templateUrl: './app/template/application.tmpl.html'
         }), 
-        __metadata('design:paramtypes', [communication_srv_1.CommunicationService, token_srv_1.TokenService, router_2.Router, event_srv_1.Eventservice])
+        __metadata('design:paramtypes', [communication_srv_1.CommunicationService, token_srv_1.TokenService, router_1.Router, event_srv_1.Eventservice])
     ], Application);
     return Application;
 }());

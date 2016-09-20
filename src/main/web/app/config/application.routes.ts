@@ -4,11 +4,9 @@ import { Login }                                from '../component/login.comp';
 import { Home }                                 from '../component/home.comp'
 
 export const appRoutes: Routes = [
-    {
-        path: '',
+    {   path: '',
         redirectTo: '/loginForm',
-        terminal: true
-    },
+        pathMatch: 'full'},
     {path: 'loginForm', component: Login},
     {path: 'home',      component: Home}
 ];

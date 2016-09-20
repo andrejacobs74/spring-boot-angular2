@@ -1,8 +1,6 @@
 import { Component }                            from '@angular/core'
-import { ROUTER_DIRECTIVES }                    from '@angular/router'
 import { Response }                             from '@angular/http';
 import { Router }                               from '@angular/router'
-import { FORM_DIRECTIVES }                      from '@angular/forms';
 
 import { TokenService }                         from '../service/token.srv';
 import { CommunicationService}                  from '../service/communication.srv';
@@ -11,7 +9,6 @@ import { User }                                 from "../model/user";
 
 @Component({
     selector: 'application',
-    directives: [ROUTER_DIRECTIVES, FORM_DIRECTIVES],
     templateUrl: './app/template/application.tmpl.html'
 
 })
